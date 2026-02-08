@@ -1,0 +1,155 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Predix",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Predix",
+          "icon": "house",
+          "href": "https://predixbr.com/"
+        },
+        {
+          "anchor": "X",
+          "icon": "newspaper",
+          "href": "https://x.com/PredixBR"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Começar",
+            "pages": [
+              "index",
+              "quickstart",
+              "quickstart-copied-1",
+              "quickstart-copied-10",
+              "quickstart-copied-2"
+            ]
+          },
+          {
+            "group": "Depósitos e Saques",
+            "pages": [
+              "quickstart-copied-5",
+              "quickstart-copied-3",
+              "quickstart-copied-4"
+            ]
+          },
+          {
+            "group": "Mercados",
+            "pages": [
+              "quickstart-copied-6",
+              "quickstart-copied-7",
+              "quickstart-copied-8",
+              "quickstart-copied-9",
+              "quickstart-copied-11"
+            ]
+          },
+          {
+            "group": "Operações",
+            "pages": [
+              "quickstart-copied-12",
+              "quickstart-copied-13",
+              "quickstart-copied-14",
+              "quickstart-copied-15",
+              "quickstart-copied-18",
+              "quickstart-copied-16",
+              "quickstart-copied-17",
+              "quickstart-copied-19"
+            ]
+          },
+          {
+            "group": "Customization",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "Writing content",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  }
+}

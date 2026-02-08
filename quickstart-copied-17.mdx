@@ -1,0 +1,109 @@
+---
+title: "Programa de Reembolso para Makers"
+description: "Estamos lançando o Reembolso para Makers nos mercados de resolução rápida de 1 hora; um programa criado para tornar esses mercados de ritmo acelerado mais profundos, mais apertados e mais fáceis de operar.
+Market makers que fornecem liquidez ativa (ordens que são executadas) ganham reembolsos diários em USDC, proporcionais à liquidez que fornecem."
+---
+
+### **Por que Reembolso para Makers?**
+
+Mercados de 1 hora se movem rápido. Quando a liquidez é mais profunda:
+
+- Os spreads tendem a ser mais apertados
+- O impacto no preço é menor
+- As execuções são mais confiáveis
+- Os mercados são mais resilientes durante períodos de volatilidade
+
+O Reembolso para Makers incentiva cotações consistentes e competitivas, para que todos tenham uma experiência de operação melhor.
+
+### **Como Funciona o Reembolso para Makers**
+
+- Pago diariamente em USDC: Os reembolsos são calculados e distribuídos todos os dias.
+- Baseado em desempenho: Você ganha com base na proporção de liquidez que você forneceu e que foi de fato consumida.
+
+### **Financiamento**
+
+O Reembolso para Makers é financiado pelas taxas de taker coletadas nos mercados de resolução rápida de 1 hora. Uma porcentagem dessas taxas é redistribuída aos makers que mantêm os mercados líquidos.
+
+## **Reembolsos Ponderados pela Curva de Taxas**
+
+Os reembolsos são distribuídos usando a **mesma fórmula das taxas de taker**. Isso garante que os makers sejam recompensados proporcionalmente ao valor das taxas que sua liquidez gera.
+
+Para cada ordem de maker executada:
+
+`equivalente_de_taxa = ações * preço * 0,25 * (preço * (1 - preço))^2`
+
+Seu reembolso diário:
+
+`reembolso = (seu_equivalente_de_taxa / equivalente_de_taxa_total) * pool_de_reembolso`
+
+## **Estrutura de Taxas de Taker**
+
+As taxas de taker são calculadas em USDC e variam de acordo com o preço da ação. As taxas são **mais altas em 50% de probabilidade** e **mais baixas nos extremos** (perto de 0% ou 100%).
+
+(Inserir imagem da fee curve )
+
+---
+
+**Tabela de Taxas (100 ações)**
+
+| Preço  | Valor da Operação | Taxa (USDC) | Taxa Efetiva |
+| :----- | :---------------- | :---------- | :----------- |
+| \$0,01 | \$1               | \$0,00      | 0,00%        |
+| \$0,05 | \$5               | \$0,003     | 0,06%        |
+| \$0,10 | \$10              | \$0,02      | 0,20%        |
+| \$0,15 | \$15              | \$0,06      | 0,41%        |
+| \$0,20 | \$20              | \$0,13      | 0,64%        |
+| \$0,25 | \$25              | \$0,22      | 0,88%        |
+| \$0,30 | \$30              | \$0,33      | 1,10%        |
+| \$0,35 | \$35              | \$0,45      | 1,29%        |
+| \$0,40 | \$40              | \$0,58      | 1,44%        |
+| \$0,45 | \$45              | \$0,69      | 1,53%        |
+| \$0,50 | \$50              | \$0,78      | **1,56%**    |
+| \$0,55 | \$55              | \$0,84      | 1,53%        |
+| \$0,60 | \$60              | \$0,86      | 1,44%        |
+| \$0,65 | \$65              | \$0,84      | 1,29%        |
+| \$0,70 | \$70              | \$0,77      | 1,10%        |
+| \$0,75 | \$75              | \$0,66      | 0,88%        |
+| \$0,80 | \$80              | \$0,51      | 0,64%        |
+| \$0,85 | \$85              | \$0,35      | 0,41%        |
+| \$0,90 | \$90              | \$0,18      | 0,20%        |
+| \$0,95 | \$95              | \$0,05      | 0,06%        |
+| \$0,99 | \$99              | \$0,00      | 0,00%        |
+
+A taxa efetiva máxima é de **1,56%** em 50% de probabilidade. As taxas diminuem simetricamente em direção a ambos os extremos.
+
+## **Precisão das Taxas**
+
+As taxas são arredondadas para 4 casas decimais. A menor taxa cobrada é de 0,0001 USDC. Qualquer valor menor é arredondado para zero, então operações muito pequenas próximas aos extremos podem não ter taxa alguma.
+
+## **Perguntas Frequentes**
+
+**Como me qualifico para o reembolso de maker?**
+
+Coloque ordens que adicionem liquidez ao livro de ofertas e que sejam executadas (ou seja, sua liquidez é consumida por outro operador).
+
+**Quando os reembolsos são pagos?**
+
+Diariamente, em USDC.
+
+**Como os reembolsos são calculados?**
+
+Os reembolsos são proporcionais à sua parcela de liquidez de maker executada em cada mercado elegível. Durante períodos com ponderação pela curva de taxas, o cálculo é baseado no equivalente de taxa usando a fórmula acima.
+
+**De onde vem o pool de reembolso?**
+
+As taxas de taker coletadas nos mercados elegíveis são destinadas ao pool de reembolso de makers e distribuídas diariamente.
+
+**Quais mercados possuem taxas habilitadas?**
+
+Atualmente, apenas os mercados de resolução rápida de 1 hora possuem taxas de taker habilitadas.
+
+**A Predix cobra taxas em todos os mercados?**
+
+Não. A Predix cobra taxas de taker apenas nos mercados de resolução rápida de 1 hora. Todos os outros mercados continuam sem taxas.
+
+### **Para Usuários da API**
+
+Se você opera de forma programática, será necessário atualizar seu cliente para lidar com as taxas corretamente.
+
+(Inserir guia)
