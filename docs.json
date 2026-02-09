@@ -20,6 +20,11 @@
           "anchor": "X",
           "icon": "newspaper",
           "href": "https://x.com/PredixBR"
+        },
+        {
+          "anchor": "Discord",
+          "icon": "address-book",
+          "href": "https://discord.gg/cQjmWq6Z"
         }
       ]
     },
