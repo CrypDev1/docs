@@ -5,12 +5,18 @@
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
+<<<<<<< HEAD
     "dark": "#15803D",
     "background": {
       "dark": "#0A0A0A"
     }
   },
   "favicon": "/favicon.png",
+=======
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
   "navigation": {
     "global": {
       "anchors": [
@@ -21,19 +27,31 @@
         },
         {
           "anchor": "X",
+<<<<<<< HEAD
           "icon": "x-twitter",
+=======
+          "icon": "newspaper",
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
           "href": "https://x.com/PredixBR"
         },
         {
           "anchor": "Discord",
+<<<<<<< HEAD
           "icon": "discord",
+=======
+          "icon": "address-book",
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
           "href": "https://discord.gg/cQjmWq6Z"
         }
       ]
     },
     "tabs": [
       {
+<<<<<<< HEAD
         "tab": "Guia",
+=======
+        "tab": "Guides",
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
         "groups": [
           {
             "group": "Começar",
@@ -75,25 +93,83 @@
               "quickstart-copied-17",
               "quickstart-copied-19"
             ]
+<<<<<<< HEAD
+=======
+          },
+          {
+            "group": "Customization",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "Writing content",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
           }
         ]
       }
     ]
   },
   "logo": {
+<<<<<<< HEAD
     "light": "/logo/light.png",
     "dark": "/logo/dark.png",
     "href": "https://predixbr.com/"
+=======
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
   },
   "navbar": {
     "links": [
       {
+<<<<<<< HEAD
         "label": "Discord",
         "href": "https://discord.gg/cQjmWq6Z"
+=======
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
       }
     ],
     "primary": {
       "type": "button",
+<<<<<<< HEAD
       "label": "Acessar Predix",
       "href": "https://predixbr.com/"
     }
@@ -103,6 +179,29 @@
       "x": "https://x.com/PredixBR",
       "discord": "https://discord.gg/cQjmWq6Z",
       "website": "https://predixbr.com/"
+=======
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+>>>>>>> 03eec8324a7450df143cf3a269b3b8859d10c9a8
     }
   }
 }
