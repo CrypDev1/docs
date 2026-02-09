@@ -10,9 +10,6 @@
       "dark": "#0A0A0A"
     }
   },
-  "favicon": "/favicon.png",
-    "dark": "#15803D"
-  },
   "favicon": "/favicon.svg",
   "navigation": {
     "global": {
