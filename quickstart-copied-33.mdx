@@ -1,0 +1,18 @@
+---
+title: "Níveis"
+description: "O volume acumulado na plataforma determina o seu nível na Predix. Cada nível desbloqueia um multiplicador permanente sobre os pontos ganhos por volume. Os níveis são baseados no volume total operado ao longo da vida do usuário e nunca são rebaixados."
+---
+
+| Nível | Nome     | Volume Necessário     | Multiplicador |
+| :---- | :------- | :-------------------- | :------------ |
+| 🌲    | Madeira  | \$0 – \$849           | 1,00x         |
+| 🥉    | Bronze   | \$850 – \$2.549       | 1,10x         |
+| 🥈    | Prata    | \$2.550 – \$11.049    | 1,125x        |
+| 🥇    | Ouro     | \$11.050 – \$53.549   | 1,15x         |
+| 💿    | Platina  | \$53.550 – \$181.049  | 1,175x        |
+| 💎    | Diamante | \$181.050 – \$436.049 | 1,20x         |
+| 🏆    | Campeão  | \$436.050+            | 1,25x         |
+
+O multiplicador de nível é aplicado apenas aos pontos ganhos por volume de operações. Ele funciona de forma combinada com os demais multiplicadores (mercado novo, maker, streak, etc.), respeitando sempre o teto máximo de 4x.
+
+**Exemplo:** Um usuário no nível Ouro (1,15x) que executa uma ordem limitada (1,5x) em um mercado com menos de \$1.000 de volume (2x) recebe um multiplicador total de 1,15 × 1,5 × 2 = 3,45x. Nesse caso, \$10 em volume geram 3,45 PXP.

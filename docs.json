@@ -51,6 +51,14 @@
             ]
           },
           {
+            "group": "Sistema de Pontos Predix (PXP)",
+            "pages": [
+              "quickstart-copied-32",
+              "quickstart-copied-33",
+              "quickstart-copied-34"
+            ]
+          },
+          {
             "group": "Mercados",
             "pages": [
               "quickstart-copied-6",
