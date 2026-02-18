@@ -1,0 +1,34 @@
+---
+title: "Bot de Liquidez da Predix"
+description: "Como a Predix garante liquidez em todos os mercados usando um sistema proprietário de hedging ponderado por probabilidade, sem depender de market makers externos."
+---
+
+# **Market Making Automatizado**
+
+**O problema da liquidez em mercados de previsão**
+
+Todo mercado de previsão enfrenta o mesmo desafio inicial: para alguém comprar, precisa ter alguém vendendo. Nos primeiros dias de qualquer mercado, sem compradores e vendedores suficientes, o livro de ofertas fica vazio e as operações travam.
+
+Plataformas como a Polymarket resolveram esse problema na força bruta — gastando dezenas de milhões de dólares em incentivos para atrair market makers profissionais externos. A Predix adotou uma abordagem diferente.
+
+## A solução da Predix: Hedging Ponderado por Probabilidade
+
+A Predix utiliza um bot de market making proprietário que fornece liquidez automaticamente em ambos os lados de cada mercado. Diferente de um AMM (Automated Market Maker) tradicional que mantém exposição igual nos dois lados independente das probabilidades, o bot da Predix aloca capital de forma proporcional às probabilidades do mercado.
+
+Na prática: se um mercado precifica "Sim" a 70%, o bot aloca aproximadamente 70% do seu capital no lado "Sim" e 30% no lado "Não". À medida que as probabilidades mudam com novas informações e trades, o bot rebalanceia automaticamente sua posição.
+
+### **Por que isso importa para o usuário?**
+
+- **Liquidez sempre disponível:** Ao entrar em qualquer mercado na Predix, sempre haverá ofertas de compra e venda disponíveis. Você não precisa esperar que outra pessoa apareça para operar.
+- **Spreads competitivos:** O bot mantém spreads ajustados entre os preços de compra e venda, garantindo que você não pague uma diferença excessiva ao entrar ou sair de uma posição.
+- **Preços que refletem a realidade:** Como o bot se ajusta continuamente às probabilidades do mercado, os preços permanecem alinhados com as expectativas reais dos participantes.
+
+## **Como funciona o hedging automático?**
+
+O modelo de hedging ponderado por probabilidade funciona como um mecanismo de auto-proteção. Em um AMM tradicional, se um mercado está a 90% de probabilidade para "Sim", o sistema ainda mantém 50% de exposição no "Não" — o que significa uma perda significativa quando o resultado se confirma.
+
+No modelo da Predix, com o mercado a 90% para "Sim", o bot já tem ~90% do capital alocado em "Sim" e apenas ~10% em "Não". Se "Sim" se confirma, a perda é limitada apenas à pequena fração alocada no "Não". Isso permite que a Predix ofereça liquidez sustentável sem depender de capital externo massivo.
+
+## **Proteção contra manipulação**
+
+O sistema de matching da Predix inclui mecanismos de proteção contra tentativas de manipulação por grandes ordens. Quando uma ordem de tamanho incomum é detectada, o bot ajusta automaticamente seus parâmetros para proteger a integridade do mercado e minimizar o impacto de ordens que buscam mover preços artificialmente.

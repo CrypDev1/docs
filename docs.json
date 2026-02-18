@@ -37,65 +37,65 @@
             "pages": [
               "index",
               "quickstart",
-              "quickstart-copied-1",
-              "quickstart-copied-10",
-              "quickstart-copied-2"
+              "como-depositar",
+              "como-sacar",
+              "faca-sua-primeira-trade"
             ]
           },
           {
             "group": "Depósitos e Saques",
             "pages": [
-              "quickstart-copied-5",
-              "quickstart-copied-3",
-              "quickstart-copied-4"
+              "deposite-transferindo-criptomoedas",
+              "deposite-pix",
+              "deposite-com-cartao"
             ]
           },
           {
             "group": "Sistema de Pontos Predix (PXP)",
             "pages": [
-              "quickstart-copied-32",
-              "quickstart-copied-33",
-              "quickstart-copied-34"
+              "como-ganhar-pontos",
+              "niveis",
+              "premiacao-e-leaderboards"
             ]
           },
           {
             "group": "Mercados",
             "pages": [
-              "quickstart-copied-6",
-              "quickstart-copied-7",
-              "quickstart-copied-8",
-              "quickstart-copied-9",
-              "quickstart-copied-11"
+              "como-sao-criados-os-mercados",
+              "como-sao-os-precos-calculados",
+              "como-sao-os-mercados-de-previsao-resolvidos",
+              "como-os-mercados-sao-definidos",
+              "como-os-mercados-sao-contestados"
             ]
           },
           {
             "group": "Operações",
             "pages": [
-              "quickstart-copied-12",
-              "quickstart-copied-13",
-              "quickstart-copied-14",
-              "quickstart-copied-15",
-              "quickstart-copied-20",
-              "quickstart-copied-18",
-              "quickstart-copied-16",
-              "quickstart-copied-17",
-              "quickstart-copied-19"
+              "ordens-limitadas",
+              "ordens-a-mercado",
+              "recompensas-por-manter-posicoes",
+              "recompensas-por-liquidez",
+              "bot-de-liquidez-da-predix",
+              "a-predix-tem-limites-de-operacao",
+              "taxas-de-operacao",
+              "programa-de-reembolso-para-makers",
+              "usando-o-livro-de-ofertas"
             ]
           },
           {
             "group": "Perguntas Frequentes",
             "pages": [
-              "quickstart-copied-26",
-              "quickstart-copied-21",
-              "quickstart-copied-23",
-              "quickstart-copied-24",
-              "quickstart-copied-30",
-              "quickstart-copied-25",
-              "quickstart-copied-22",
-              "quickstart-copied-27",
-              "quickstart-copied-28",
-              "quickstart-copied-29",
-              "quickstart-copied-31"
+              "o-que-e-um-mercado-de-previsao",
+              "a-predix-e-uma-casa-de-apostas",
+              "meu-dinheiro-ta-seguro",
+              "tem-valor-minimo-pra-comecar",
+              "que-tipo-de-mercados-tem-na-predix",
+              "quem-decide-o-resultado",
+              "posso-vender-antes-do-evento-acabar",
+              "preciso-entender-de-cripto-pra-usar",
+              "tem-alguma-taxa",
+              "posso-perder-mais-do-que-eu-coloquei",
+              "o-que-acontece-se-o-evento-nao-acontecer"
             ]
           }
         ]
