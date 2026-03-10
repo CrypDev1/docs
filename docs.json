@@ -22,6 +22,11 @@
           "href": "https://x.com/PredixBR"
         },
         {
+          "anchor": "API Predix",
+          "icon": "0",
+          "href": "https://docs.api.predixbr.com/"
+        },
+        {
           "anchor": "Discord",
           "icon": "discord",
           "href": "https://discord.gg/predix"
@@ -76,7 +81,6 @@
               "ordens-a-mercado",
               "recompensas-por-manter-posicoes",
               "recompensas-por-liquidez",
-              "bot-de-liquidez-da-predix",
               "a-predix-tem-limites-de-operacao",
               "taxas-de-operacao",
               "programa-de-reembolso-para-makers",
